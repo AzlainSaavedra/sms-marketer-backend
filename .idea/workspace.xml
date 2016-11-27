@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="a224c68b-2359-4b83-b5d6-bd390c3e314b" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Middleware/Cors.php" afterPath="$PROJECT_DIR$/app/Http/Middleware/Cors.php" />
     </list>
     <ignored path="easycorsOnHeroku.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -27,8 +28,8 @@
       <file leaf-file-name="Cors.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Http/Middleware/Cors.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6455696">
-              <caret line="17" column="75" selection-start-line="17" selection-start-column="43" selection-end-line="17" selection-end-column="75" />
+            <state vertical-scroll-proportion="0.7721519">
+              <caret line="34" column="31" selection-start-line="34" selection-start-column="31" selection-end-line="34" selection-end-column="31" />
               <folding />
             </state>
           </provider>
@@ -247,8 +248,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Middleware/Cors.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6455696">
-          <caret line="17" column="75" selection-start-line="17" selection-start-column="43" selection-end-line="17" selection-end-column="75" />
+        <state vertical-scroll-proportion="0.7721519">
+          <caret line="34" column="31" selection-start-line="34" selection-start-column="31" selection-end-line="34" selection-end-column="31" />
           <folding />
         </state>
       </provider>
