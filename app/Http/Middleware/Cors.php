@@ -15,7 +15,7 @@ class Cors
      */
     public function handle($request, Closure $next)
     {
-        $domains = ['http://0.0.0.0:3333','https://easycors.herokuapp.com'];
+        $domains = ['http://0.0.0.0:3333','https://yeomandist.herokuapp.com'];
 
         if(isset($request->server()['HTTP_ORIGIN'])){
             $origin = $request->server()['HTTP_ORIGIN'];
