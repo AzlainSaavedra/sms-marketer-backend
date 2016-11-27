@@ -10,8 +10,9 @@
 | to using a Closure or controller method. Build something great!
 |
 */
-header('Access-Control-Allow-Origin: *');
+
 Route::group(['prefix' => 'api-v1'], function () {
+    header('Access-Control-Allow-Origin: *');
     Route::options('/login','jwtLoginController@options');
     Route::post("/login", 'jwtLoginController@login');
     Route::post("/userAuth", 'jwtLoginController@getUser');
