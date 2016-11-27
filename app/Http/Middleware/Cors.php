@@ -15,12 +15,12 @@ class Cors
      */
     public function handle($request, Closure $next)
     {
-        $domains = ['https://yeomandist.herokuapp.com'];
+       /* $domains = ['https://yeomandist.herokuapp.com'];
 
         if(isset($request->server()['HTTP_ORIGIN'])){
             $origin = $request->server()['HTTP_ORIGIN'];
             if(in_array($origin, $domains)){
-                /*if ($request->isMethod('options')) {
+                if ($request->isMethod('options')) {
                     return $next($request)->header('Access-Control-Allow-Origin' , '*')
                         ->header('Access-Control-Allow-Methods', 'POST, GET, OPTIONS, PUT, DELETE')
                         ->header('Access-Control-Allow-Headers', 'Access-Control-Allow-Origin, Access-Control-Allow-Headers, Access-Control-Allow-Methods, Content-Type, Accept, Authorization, X-Requested-With');
@@ -28,14 +28,14 @@ class Cors
                     return $next($request)->header('Access-Control-Allow-Origin' , '*')
                         ->header('Access-Control-Allow-Methods', 'POST, GET, OPTIONS, PUT, DELETE')
                         ->header('Access-Control-Allow-Headers', 'Content-Type, Accept, Authorization, X-Requested-With');
-                }*/
+                }
 
 
                 return $next($request)
                     ->header('Access-Control-Allow-Methods', 'POST, GET, OPTIONS, PUT, DELETE')
                     ->header('Access-Control-Allow-Headers', 'Content-Type, Accept, Authorization, X-Requested-With');
             }
-        }
+        }*/
 
         return $next($request);
     }
