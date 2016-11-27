@@ -21,7 +21,7 @@ class Cors
             $origin = $request->server()['HTTP_ORIGIN'];
             if(in_array($origin, $domains)){
                 if ($request->isMethod('options')) {
-                    return $next($request)->header('Access-Control-Allow-Origin' , '*')
+                    return $next($request)
                         ->header('Access-Control-Allow-Methods', 'POST, GET, OPTIONS, PUT, DELETE')
                         ->header('Access-Control-Allow-Headers', 'Access-Control-Allow-Origin, Access-Control-Allow-Headers, Access-Control-Allow-Methods, Content-Type, Accept, Authorization, X-Requested-With');
                 }else{
@@ -37,6 +37,6 @@ class Cors
             }
         }
 
-        return $next($request);
+        return $next($request)->header('Access-Control-Allow-Origin', '*');
     }
 }
