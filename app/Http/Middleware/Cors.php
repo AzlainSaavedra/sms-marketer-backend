@@ -31,7 +31,7 @@ class Cors
                 }*/
 
 
-                return $next($request)->header('Access-Control-Allow-Origin' , '*')
+                return $next($request)
                     ->header('Access-Control-Allow-Methods', 'POST, GET, OPTIONS, PUT, DELETE')
                     ->header('Access-Control-Allow-Headers', 'Content-Type, Accept, Authorization, X-Requested-With');
             }

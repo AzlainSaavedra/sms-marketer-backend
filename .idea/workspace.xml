@@ -28,8 +28,8 @@
       <file leaf-file-name="Cors.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Http/Middleware/Cors.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.62025315">
-              <caret line="30" column="19" selection-start-line="22" selection-start-column="16" selection-end-line="30" selection-end-column="19" />
+            <state vertical-scroll-proportion="0.73417723">
+              <caret line="33" column="38" selection-start-line="33" selection-start-column="38" selection-end-line="33" selection-end-column="38" />
               <folding />
             </state>
           </provider>
@@ -226,7 +226,13 @@
       <option name="project" value="LOCAL" />
       <updated>1480262789469</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="change">
+      <created>1480262887495</created>
+      <option name="number" value="00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1480262887495</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -277,8 +283,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Middleware/Cors.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.62025315">
-          <caret line="30" column="19" selection-start-line="22" selection-start-column="16" selection-end-line="30" selection-end-column="19" />
+        <state vertical-scroll-proportion="0.73417723">
+          <caret line="33" column="38" selection-start-line="33" selection-start-column="38" selection-end-line="33" selection-end-column="38" />
           <folding />
         </state>
       </provider>
