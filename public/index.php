@@ -7,6 +7,7 @@
  * @author   Taylor Otwell <taylor@laravel.com>
  */
 header('Access-Control-Allow-Origin: *');
+
 /*
 |--------------------------------------------------------------------------
 | Register The Auto Loader
