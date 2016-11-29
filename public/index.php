@@ -6,6 +6,7 @@
  * @package  Laravel
  * @author   Taylor Otwell <taylor@laravel.com>
  */
+header_remove('Access-Control-Allow-Origin');
 header('Access-Control-Allow-Origin: *');
 
 /*
