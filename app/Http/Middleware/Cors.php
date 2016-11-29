@@ -17,6 +17,7 @@ class Cors
     {
         $domains = ['https://yeomandist.herokuapp.com'];
 
+
         if(isset($request->server()['HTTP_ORIGIN'])){
             $origin = $request->server()['HTTP_ORIGIN'];
             if(in_array($origin, $domains)){
