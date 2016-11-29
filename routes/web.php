@@ -10,8 +10,7 @@
 | to using a Closure or controller method. Build something great!
 |
 */
-header_remove('Access-Control-Allow-Origin');
-header('Access-Control-Allow-Origin: *');
+
 
 Route::group(['prefix' => 'api-v1'], function () {
     header('Access-Control-Allow-Origin: *');
