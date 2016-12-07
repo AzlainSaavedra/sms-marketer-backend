@@ -15,7 +15,7 @@ class Cors
      */
     public function handle($request, Closure $next)
     {
-        $domains = ['https://yeomandist.herokuapp.com'];
+        $domains = ['http://bpd.dyndns-web.com'];
 
 
         if(isset($request->server()['HTTP_ORIGIN'])){
