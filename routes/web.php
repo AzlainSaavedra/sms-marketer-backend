@@ -12,6 +12,9 @@
 */
 
 
+Route::get('foo', function () {
+    return 'Hello World';
+});
 Route::group(['prefix' => 'api-v1'], function () {
     header('Access-Control-Allow-Origin: *');
     Route::options('/login','jwtLoginController@options');
@@ -30,6 +33,8 @@ Route::group(['prefix' => 'api-v1'], function () {
 
 
 });
+
+
 
 Route::get('send','MailController@send' );
 Route::get('sendmail','TestController@index' );

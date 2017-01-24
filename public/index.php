@@ -18,6 +18,8 @@
 |
 */
 
+ini_set('display_errors', '1');
+header("Access-Control-Allow-Origin: *");
 require __DIR__.'/../bootstrap/autoload.php';
 
 /*

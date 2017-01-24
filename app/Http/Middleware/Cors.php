@@ -15,7 +15,7 @@ class Cors
      */
     public function handle($request, Closure $next)
     {
-        $domains = ['http://bpd.dyndns-web.com'];
+        $domains = ['http://localhost:3333'];
 
 
         if(isset($request->server()['HTTP_ORIGIN'])){
@@ -23,6 +23,7 @@ class Cors
             if(in_array($origin, $domains)){
                 if ($request->isMethod('options')) {
                     return $next($request)
+
                         ->header('Access-Control-Allow-Methods', 'POST, GET, OPTIONS, PUT, DELETE')
                         ->header('Access-Control-Allow-Headers', 'Access-Control-Allow-Origin, Access-Control-Allow-Headers, Access-Control-Allow-Methods, Content-Type, Accept, Authorization, X-Requested-With');
                 }else{
@@ -30,11 +31,6 @@ class Cors
                         ->header('Access-Control-Allow-Methods', 'POST, GET, OPTIONS, PUT, DELETE')
                         ->header('Access-Control-Allow-Headers', 'Content-Type, Accept, Authorization, X-Requested-With');
                 }
-
-
-                return $next($request)
-                    ->header('Access-Control-Allow-Methods', 'POST, GET, OPTIONS, PUT, DELETE')
-                    ->header('Access-Control-Allow-Headers', 'Content-Type, Accept, Authorization, X-Requested-With');
             }
         }
 
