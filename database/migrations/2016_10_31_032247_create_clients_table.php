@@ -18,15 +18,14 @@ class CreateClientsTable extends Migration
             $table->integer('user_id')->unsigned();
             $table->foreign('user_id')->references('id')->on('users');
             $table->string('email');
-            $table->string('firstName');
-            $table->string('secondName');
-            $table->string('lastName');
-            $table->string('secondLastName');
-            $table->string('phone');
-            $table->string('address');
-            $table->string('idType');
-            $table->string('idClient');
-            $table->string('businessName');
+            $table->string('firstName')->nullable();
+            $table->string('secondName')->nullable();
+            $table->string('lastName')->nullable();
+            $table->string('secondLastName')->nullable();
+            $table->string('phone')->nullable();
+            $table->string('address')->nullable();
+            $table->integer('idType')->default(3);
+            $table->string('businessName')->nullable();
             $table->timestamps();
         });
     }

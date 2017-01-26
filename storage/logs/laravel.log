@@ -540,3 +540,26 @@ Stack trace:
 #17 /opt/smsmarketerv2-back/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(121): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
 #18 /opt/smsmarketerv2-back/artisan(35): Illuminate\Foundation\Console\Kernel->handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
 #19 {main}  
+[2017-01-26 02:18:05] local.ERROR: Symfony\Component\Debug\Exception\FatalThrowableError: Parse error: syntax error, unexpected '$table' (T_VARIABLE) in /opt/smsmarketerv2-back/database/migrations/2016_10_31_032247_create_clients_table.php:28
+Stack trace:
+#0 /opt/smsmarketerv2-back/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(318): Illuminate\Filesystem\Filesystem->requireOnce('/opt/smsmarkete...')
+#1 /opt/smsmarketerv2-back/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(246): Illuminate\Database\Migrations\Migrator->requireFiles(Array)
+#2 /opt/smsmarketerv2-back/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/ResetCommand.php(68): Illuminate\Database\Migrations\Migrator->reset(Array, false)
+#3 [internal function]: Illuminate\Database\Console\Migrations\ResetCommand->fire()
+#4 /opt/smsmarketerv2-back/vendor/laravel/framework/src/Illuminate/Container/Container.php(508): call_user_func_array(Array, Array)
+#5 /opt/smsmarketerv2-back/vendor/laravel/framework/src/Illuminate/Console/Command.php(169): Illuminate\Container\Container->call(Array)
+#6 /opt/smsmarketerv2-back/vendor/symfony/console/Command/Command.php(254): Illuminate\Console\Command->execute(Object(Symfony\Component\Console\Input\ArrayInput), Object(Illuminate\Console\OutputStyle))
+#7 /opt/smsmarketerv2-back/vendor/laravel/framework/src/Illuminate/Console/Command.php(155): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArrayInput), Object(Illuminate\Console\OutputStyle))
+#8 /opt/smsmarketerv2-back/vendor/laravel/framework/src/Illuminate/Console/Command.php(185): Illuminate\Console\Command->run(Object(Symfony\Component\Console\Input\ArrayInput), Object(Illuminate\Console\OutputStyle))
+#9 /opt/smsmarketerv2-back/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/RefreshCommand.php(55): Illuminate\Console\Command->call('migrate:reset', Array)
+#10 [internal function]: Illuminate\Database\Console\Migrations\RefreshCommand->fire()
+#11 /opt/smsmarketerv2-back/vendor/laravel/framework/src/Illuminate/Container/Container.php(508): call_user_func_array(Array, Array)
+#12 /opt/smsmarketerv2-back/vendor/laravel/framework/src/Illuminate/Console/Command.php(169): Illuminate\Container\Container->call(Array)
+#13 /opt/smsmarketerv2-back/vendor/symfony/console/Command/Command.php(254): Illuminate\Console\Command->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#14 /opt/smsmarketerv2-back/vendor/laravel/framework/src/Illuminate/Console/Command.php(155): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#15 /opt/smsmarketerv2-back/vendor/symfony/console/Application.php(820): Illuminate\Console\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#16 /opt/smsmarketerv2-back/vendor/symfony/console/Application.php(187): Symfony\Component\Console\Application->doRunCommand(Object(Illuminate\Database\Console\Migrations\RefreshCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#17 /opt/smsmarketerv2-back/vendor/symfony/console/Application.php(118): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#18 /opt/smsmarketerv2-back/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(121): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#19 /opt/smsmarketerv2-back/artisan(35): Illuminate\Foundation\Console\Kernel->handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#20 {main}  
