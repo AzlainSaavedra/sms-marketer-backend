@@ -51,7 +51,7 @@ return [
     |
     */
 
-    'url' => env('APP_URL', 'http://smsmarketerv2'),
+    'url' => env('APP_URL', 'http://sms-marketer-v2.dyndns-web.com'),
 
     /*
     |--------------------------------------------------------------------------
@@ -163,7 +163,7 @@ return [
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
         Tymon\JWTAuth\Providers\JWTAuthServiceProvider::class,
-
+	\L5Swagger\L5SwaggerServiceProvider::class,
         /*
          * Package Service Providers...
          */

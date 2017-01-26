@@ -1,5 +1,4 @@
 <?php
-
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -11,6 +10,13 @@
 |
 */
 
+Route::get('/', function () {
+    return "Index";
+});
+
+Route::get("/bar", function () {
+    return "Bar";
+});
 
 Route::get('foo', function () {
     return 'Hello World';

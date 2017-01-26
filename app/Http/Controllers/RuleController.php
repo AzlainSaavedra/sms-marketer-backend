@@ -1,6 +1,35 @@
 <?php
-
 namespace App\Http\Controllers;
+
+/**
+ * Class ApiController
+ *
+ * @package App\Http\Controllers
+ *
+ * @SWG\Swagger(
+ * basePath="/",
+ *     host="bpd.dyndns-web.com:8082",
+ *     schemes={"http"},
+ *     @SWG\Info(
+ *         version="1.0",
+ *         title="SMS Marketer API",
+ *         @SWG\Contact(name="Azlain Saavedra", url="azlain.saavedra@gmail.com"),
+ *     ),
+ *     @SWG\Definition(
+ *         definition="Error",
+ *         required={"code", "message"},
+ *         @SWG\Property(
+ *             property="code",
+ *             type="integer",
+ *             format="int32"
+ *         ),
+ *         @SWG\Property(
+ *             property="message",
+ *             type="string"
+ *         )
+ *     )
+ * )
+ */
 
 use App\Rule;
 use Exception;
