@@ -33,3 +33,6 @@ Route::group(['prefix' => 'api-v1'], function () {
 
 //Route::get('send','MailController@send' );
 //Route::get('sendmail','TestController@index' );
+
+
+Route::resource('carros', 'carrosAPIController');

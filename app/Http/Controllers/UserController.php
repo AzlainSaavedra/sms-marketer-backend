@@ -80,9 +80,13 @@ class UserController extends Controller
     public function destroy($id){
 
         try{
-            $user = User::find($id);
-            $user->delete();
-            return response()->json(['status'=>'success','data'=>'deleted'], 200);
+            if($id!=1){
+                $user = User::find($id);
+                $user->delete();
+                return response()->json(['status'=>'success','data'=>'deleted'], 200);
+            }else{
+                return response()->json(['status'=>'error','data'=>'user admin can\'t remove'], 200);
+            }
         }catch(\Exception $ex){
             return response()->json(['status'=>'Error','data'=>$ex], 500);
         }

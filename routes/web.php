@@ -44,3 +44,10 @@ Route::group(['prefix' => 'api-v1'], function () {
 
 Route::get('send','MailController@send' );
 Route::get('sendmail','TestController@index' );
+
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index');
+
+Route::resource('carros', 'carrosController');

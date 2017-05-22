@@ -13,9 +13,18 @@ class Cors
      * @param  \Closure  $next
      * @return mixed
      */
+
     public function handle($request, Closure $next)
     {
-        $domains = ['http://sms-marketer-v2.dyndns-web.com:8082','http://bpd.dyndns-web.com:8082'];
+        $domains = [
+            'http://sms-marketer-v2.dyndns-web.com:8082'
+            ,'http://bpd.dyndns-web.com:8082'
+            ,'http://localhost:3333'
+            ,'http://localhost:4200'
+            ,'http://localhost:63342'
+            ,'http://0.0.0.0:3333'
+            ,'http://smsmarketerv2.front.apache:8082'
+        ];
 
 
         if(isset($request->server()['HTTP_ORIGIN'])){

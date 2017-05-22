@@ -24,11 +24,16 @@
     20 => 'Illuminate\\Validation\\ValidationServiceProvider',
     21 => 'Illuminate\\View\\ViewServiceProvider',
     22 => 'Tymon\\JWTAuth\\Providers\\JWTAuthServiceProvider',
-    23 => 'L5Swagger\\L5SwaggerServiceProvider',
-    24 => 'App\\Providers\\AppServiceProvider',
-    25 => 'App\\Providers\\AuthServiceProvider',
-    26 => 'App\\Providers\\EventServiceProvider',
-    27 => 'App\\Providers\\RouteServiceProvider',
+    23 => 'Collective\\Html\\HtmlServiceProvider',
+    24 => 'Laracasts\\Flash\\FlashServiceProvider',
+    25 => 'Prettus\\Repository\\Providers\\RepositoryServiceProvider',
+    26 => 'InfyOm\\Generator\\InfyOmGeneratorServiceProvider',
+    27 => 'InfyOm\\AdminLTETemplates\\AdminLTETemplatesServiceProvider',
+    28 => 'Yajra\\Datatables\\DatatablesServiceProvider',
+    29 => 'App\\Providers\\AppServiceProvider',
+    30 => 'App\\Providers\\AuthServiceProvider',
+    31 => 'App\\Providers\\EventServiceProvider',
+    32 => 'App\\Providers\\RouteServiceProvider',
   ),
   'eager' => 
   array (
@@ -43,11 +48,15 @@
     8 => 'Illuminate\\Session\\SessionServiceProvider',
     9 => 'Illuminate\\View\\ViewServiceProvider',
     10 => 'Tymon\\JWTAuth\\Providers\\JWTAuthServiceProvider',
-    11 => 'L5Swagger\\L5SwaggerServiceProvider',
-    12 => 'App\\Providers\\AppServiceProvider',
-    13 => 'App\\Providers\\AuthServiceProvider',
-    14 => 'App\\Providers\\EventServiceProvider',
-    15 => 'App\\Providers\\RouteServiceProvider',
+    11 => 'Laracasts\\Flash\\FlashServiceProvider',
+    12 => 'Prettus\\Repository\\Providers\\RepositoryServiceProvider',
+    13 => 'InfyOm\\Generator\\InfyOmGeneratorServiceProvider',
+    14 => 'InfyOm\\AdminLTETemplates\\AdminLTETemplatesServiceProvider',
+    15 => 'Yajra\\Datatables\\DatatablesServiceProvider',
+    16 => 'App\\Providers\\AppServiceProvider',
+    17 => 'App\\Providers\\AuthServiceProvider',
+    18 => 'App\\Providers\\EventServiceProvider',
+    19 => 'App\\Providers\\RouteServiceProvider',
   ),
   'deferred' => 
   array (
@@ -138,6 +147,10 @@
     'translation.loader' => 'Illuminate\\Translation\\TranslationServiceProvider',
     'validator' => 'Illuminate\\Validation\\ValidationServiceProvider',
     'validation.presence' => 'Illuminate\\Validation\\ValidationServiceProvider',
+    'html' => 'Collective\\Html\\HtmlServiceProvider',
+    'form' => 'Collective\\Html\\HtmlServiceProvider',
+    'Collective\\Html\\HtmlBuilder' => 'Collective\\Html\\HtmlServiceProvider',
+    'Collective\\Html\\FormBuilder' => 'Collective\\Html\\HtmlServiceProvider',
   ),
   'when' => 
   array (
@@ -175,6 +188,9 @@
     array (
     ),
     'Illuminate\\Validation\\ValidationServiceProvider' => 
+    array (
+    ),
+    'Collective\\Html\\HtmlServiceProvider' => 
     array (
     ),
   ),

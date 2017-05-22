@@ -9,7 +9,13 @@
         "laravel/framework": "5.3.*",
         "barryvdh/laravel-cors": "^0.8.2",
         "tymon/jwt-auth": "0.5.*",
-        "darkaonline/l5-swagger": "~3.0"
+        "infyomlabs/laravel-generator": "5.3.x-dev",
+        "laravelcollective/html": "^5.3.0",
+        "infyomlabs/adminlte-templates": "5.3.x-dev",
+        "infyomlabs/swagger-generator": "dev-master",
+        "jlapp/swaggervel": "dev-master",
+        "doctrine/dbal": "~2.3",
+        "yajra/laravel-datatables-oracle": "^6.0"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",
